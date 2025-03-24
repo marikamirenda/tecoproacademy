@@ -3,29 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Certificazione TECO – TECO | PRO</title>
+  <title>Certificazione TECO – TECO | PRO Academy</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-  body { font-family: 'Inter', sans-serif; margin: 0; background: #f9f9f9; color: #1a1a1a; }
-  header { background: #C61A27; color: white; padding: 2rem; text-align: center; }
-  header img { height: 50px; margin-bottom: 1rem; }
-  main { padding: 2rem; max-width: 800px; margin: auto; background: white; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-radius: 12px; margin-top: 2rem; }
-  h1 { color: #C61A27; }
-  .button { background: #C61A27; color: white; border: none; padding: 0.75rem 1.25rem; border-radius: 6px; font-size: 1rem; cursor: pointer; }
-  footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #555; }
-</style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+    }
+    header {
+      background-color: #C61A27;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    .course-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .dashboard {
+      margin: 2rem 0;
+    }
+    .progress-bar {
+      background-color: #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .progress {
+      background-color: #C61A27;
+      height: 20px;
+      width: 90%;
+    }
+    .product-list {
+      list-style: none;
+      padding: 0;
+    }
+    .product-list li {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: #f1f1f1;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
+  
   <header>
-    <img src="teco_logo.png" alt="TECO Logo" />
-    <h1>Certificazione TECO</h1>
+    <img src="final_teco_logo.png" alt="TECO Logo" style="height: 50px; vertical-align: middle;" />
+    <h1 style="display: inline; margin-left: 1rem; vertical-align: middle;">Certificazione TECO</h1>
   </header>
-  <main>
-    <p>Attestato digitale e cartaceo con badge professionale</p>
-    <button class="button">Inizia il Percorso</button>
-  </main>
-  <footer>
-    Powered by TECO | PRO – L’ecosistema tecnico per innovare insieme
-  </footer>
+  <nav style="text-align: center; margin-top: 1rem;">
+    <a href="index.html" style="text-decoration: none; color: #C61A27; font-weight: bold;">Home</a>
+  </nav>
+
+  <div class="container">
+    <img src="certificazione_teco.jpg" alt="Immagine del Corso" class="course-image" />
+    <h2>Certificazione TECO</h2>
+    <p>Benvenuto! In questo modulo scoprirai contenuti essenziali sull'automazione industriale.</p>
+    <div class="dashboard">
+      <h3>Il tuo progresso</h3>
+      <div class="progress-bar"><div class="progress"></div></div>
+      <p>Hai completato il 90% del corso.</p>
+    </div>
+    <h3>Prodotti trattati nel corso</h3>
+    <ul class="product-list">
+      <li><h4>Cavi per Automazione</h4><p>Progettati per alte prestazioni nei sistemi dinamici.</p></li>
+      <li><h4>Accessori per cablaggio</h4><p>Fascette, guaine e sistemi di identificazione.</p></li>
+      <li><h4>Connettori industriali</h4><p>Soluzioni affidabili per connessioni in ambienti gravosi.</p></li>
+    </ul>
+  </div>
 </body>
 </html>
